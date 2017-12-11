@@ -18,7 +18,7 @@ class InitControllers{
             for(let ctrlPath of controllerPaths){
 
                 if(ctrlPath === scriptName) continue;
-                let controller = new require("./" + ctrlPath)(this.baseRoute);
+                let controller = new (require("./" + ctrlPath))(this.baseRoute);
                 let routes = controller.getRoutes();
 
                 for(let route of routes){

@@ -1,0 +1,28 @@
+{
+  "name": "skeleton-mean-app",
+  "version": "1.0.0",
+  "description": "Basic app setup for Mean stack\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dusing Mean Stack",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "request": "^2.83.0",
+    "socket.io": "^2.0.3",
+    "words-to-numbers": "^1.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alechavez93/Skeleton-Mean-App.git"
+  },
+  "author": "Alejandro Chavez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alechavez93/Skeleton-Mean-App/issues"
+  },
+  "homepage": "https://github.com/alechavez93/Skeleton-Mean-App#readme"
+}

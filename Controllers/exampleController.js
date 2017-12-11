@@ -5,6 +5,7 @@ let exampleService = null;
 class ExampleController{
     constructor(baseRoute){
         this.controllerEndpoint = baseRoute + "/example";
+        this.routes = [];
         this.initializeRoutes();
     }
 
