@@ -10,6 +10,8 @@ class ExampleController{
     }
 
     getRoutes(){
+        for(let route of this.routes)
+            route.endpoint = this.controllerEndpoint + route.endpoint;
         return this.routes;
     }
 
@@ -21,25 +23,25 @@ class ExampleController{
             {
                 method: "GET",
                 permission: "STANDARD",
-                endpoint: this.controllerEndpoint + "/:param",
+                endpoint: "/:param",
                 handler: getHandler
             },
             {
                 method: "PUT",
                 permission: "STANDARD",
-                endpoint: this.controllerEndpoint + "/:param",
+                endpoint: "/:param",
                 handler: putHandler
             },
             {
                 method: "POST",
                 permission: "STANDARD",
-                endpoint: this.controllerEndpoint + "/:param",
+                endpoint: "/:param",
                 handler: postHandler
             },
             {
                 method: "DELETE",
                 permission: "STANDARD",
-                endpoint: this.controllerEndpoint + "/:param",
+                endpoint: "/:param",
                 handler: deleteHandler
             }
         ];
